@@ -1,0 +1,63 @@
+:root {
+    --main-color: #003366; /* dark blue */
+    --secondary-color: #66CCCC; /* light blue */
+    --accent-color: #FFA500; /* orange */
+    --bs-navbar-brand-color: white;
+  }
+
+.home-bg-color, .nav-bg-color{
+    background-color: var(--main-color);
+    color: white !important;
+}
+
+.link-light{
+    color: white;
+}
+
+@media (max-width: 375px) {
+    .img{
+        height: 300px;
+    }
+}
+
+.counter-section {
+    background: #f6f6f6;
+    padding: 100px 0;
+  }
+  
+  .counter {
+    text-align: center;
+  }
+  
+  .counter i {
+    color: #1abc9c;
+  }
+  
+  .counter h2 {
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .counter p {
+    color: #777;
+    font-size: 16px;
+  }
+
+  .header {
+    position: relative;
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, #00bcd4, #a2d9ff);
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 20vw));
+  }
+  
